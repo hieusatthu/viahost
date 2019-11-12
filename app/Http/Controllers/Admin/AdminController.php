@@ -29,7 +29,7 @@ class AdminController extends Controller implements FromCollection,WithHeadings
         }
 
 
-        return Excel::download(new AdminController(), 'via.xlsx');
+        return 1;
 
     }
 

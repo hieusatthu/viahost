@@ -25,8 +25,8 @@ class Checklogin extends FormRequest
     {
         return [
             //
-            'taikhoan'=>'required',
-            'matkhau' => 'required'
+            'taikhoan'=>'required|unique:via|min:10|max:20',
+            'matkhau' => 'required|min:4'
         ];
     }
 
@@ -34,7 +34,11 @@ class Checklogin extends FormRequest
     {
         return [
             'taikhoan.required' => 'Vui lòng nhập tài khoản',
+            'taikhoan.unique'   => 'Đã xảy ra lỗi!',
+            'taikhoan.min'      => 'Vui lòng nhập tài khoản',
+            'taikhoan.max'      => 'Vui lòng nhập tài khoản',
             'matkhau.required'  => 'Vui lòng nhập mật khẩu',
+            'matkhau.min'       => 'Vui lòng nhập mật khẩu',
         ];
     }
 }

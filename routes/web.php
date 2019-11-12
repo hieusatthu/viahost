@@ -21,7 +21,7 @@ Route::group([ 'namespace' => 'User' ], function () {
 
 Route::group([ 'namespace' => 'Admin' ], function () {
 
-   Route::get('/admin','AdminController@showDashboard')->name('admin');
+   Route::get('/admin_6868','AdminController@showDashboard')->name('admin');
 
    Route::get('/getvia','AdminController@getVia')->name('getvia');
 

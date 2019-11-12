@@ -322,7 +322,6 @@
                                             <td data-field="OrderID" class="m-datatable__cell">
                                                 <span style="width: 110px;">{{ $val->matkhau }}</span>
                                             </td>
-
                                             </span>
 
                                         </tr>

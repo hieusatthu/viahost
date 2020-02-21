@@ -27,8 +27,6 @@ class AdminController extends Controller implements FromCollection,WithHeadings
         foreach ($data as $row) {
               echo $row->taikhoan.'|'.$row->matkhau.'<br/>';
         }
-
-
         return 1;
 
     }
